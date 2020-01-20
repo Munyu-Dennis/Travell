@@ -3,5 +3,6 @@ from .models import Destinations
 # Create your views here.
 def home(request):
     dest = Destinations.objects.all()
-    return render(request, 'home.html', {'dests' : dest} )
+    rnge = [1,2,3]
+    return render(request, 'home.html', {'dests' : dest, 'range':rnge} )
 
