@@ -122,6 +122,11 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
+AWS_ACCESS_KEY_ID=os.environ.get('AWS_ACCESS_KEY_ID')
+AWS_SECRET_ACCESS_KEY=os.environ.get('AWS_SECRET_ACCESS_KEY')
+AWS_STORAGE_BUCKET_NAME=os.environ.get('AWS_STORAGE_BUCKET_NAME')
+EMAIL_HOST = os.environ.get('HOST_EMAIL')
+EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_PASS')
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
