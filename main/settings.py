@@ -25,7 +25,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['mighty-plains-73010.herokuapp.com']
+ALLOWED_HOSTS = ['https://mighty-plains-73010.herokuapp.com']
 
 
 # Application definition
@@ -125,7 +125,7 @@ USE_TZ = True
 AWS_ACCESS_KEY_ID=os.environ.get('AWS_ACCESS_KEY_ID')
 AWS_SECRET_ACCESS_KEY=os.environ.get('AWS_SECRET_ACCESS_KEY')
 AWS_STORAGE_BUCKET_NAME=os.environ.get('AWS_STORAGE_BUCKET_NAME')
-EMAIL_HOST = os.environ.get('HOST_EMAIL')
+EMAIL_USER = os.environ.get('EMAIL_USER')
 EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_PASS')
 
 STATIC_URL = '/static/'
